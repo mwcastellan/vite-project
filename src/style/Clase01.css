@@ -1,0 +1,30 @@
+.boton {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 50px;
+  color: red;
+}
+.boton-estilizado {
+  background-color: #1ee556;
+  color: white;
+  border: aqua;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, background-color 0.3s;
+}
+.boton-estilizado:hover {
+  background-color: #c0156d;
+  transform: scale(1.1);
+}
+.boton-estilizado:active {
+  transform: scale(0.95);
+}
+
+.txtmensaje {
+  margin: top 50px;
+  font-size: large;
+  background-color: blue;
+}
