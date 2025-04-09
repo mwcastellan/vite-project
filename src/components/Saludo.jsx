@@ -10,7 +10,7 @@ function Saludo() {
   const manejarClick = () => {
     let fecha = new Date();
     document.getElementById("txtmensaje").textContent =
-      "Aqui se hizo Click! 🎉: " + fecha;
+      "Aqui "  + " se hizo Click! 🎉: " + fecha;
   };
   return (
     <div class="boton">
