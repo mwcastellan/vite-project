@@ -7,9 +7,13 @@ import Saludo from "./components/Saludo";
 function App() {
   return (
     <>
-      <h1>h1h1h1h1h1h1h1</h1>
-      <Saludo></Saludo>
-      <h2>h2h2h2h2h2h2h2</h2>
+      <h1>Esto es H1 1</h1>
+     <Saludo pmensaje1='Saludo Mensaje1' pmensaje2='Saludo Mensaje2'/>
+      <h2>Esto es H2 1</h2>
+
+      <h2>Esto es H2 2</h2>
+     <Saludo pmensaje1='Saludo Mensaje11' pmensaje2='Saludo Mensaje12'/>
+      <h2>Esto es H2 3</h2>
     </>
   );
 }

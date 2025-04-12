@@ -1,22 +1,26 @@
 import React from "react";
 
-function Saludo() {
+function Saludo({ pmensaje1 , pmensaje2}) {
   function mensaje1() {
-    return "Botón estilizado";
+    return "Mensaje1:Botón estilizado: ";
   }
   function mensaje2() {
-    return "Hacer click aquí";
+    return "Mensaje2:Hacer click aquí";
   }
-  const manejarClick = () => {
+  function manejarClick() {
     let fecha = new Date();
-    document.getElementById("txtmensaje").textContent =
-      "Aqui "  + " se hizo Click! 🎉: " + fecha;
-  };
+
+    return (document.getElementById("txtmensaje").textContent =
+      "Aqui ..: " + " .. se hizo Click! 🎉: " + fecha);
+  }
+
   return (
     <div class="boton">
-      <p>{mensaje1()}</p>
+      <p>
+        {mensaje1()} {pmensaje1}
+      </p>
       <button class="boton-estilizado" onClick={manejarClick}>
-        {mensaje2()}
+      {mensaje2()} {pmensaje2}
       </button>
       <p id="txtmensaje" class="txtmensaje"></p>
     </div>
