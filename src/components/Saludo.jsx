@@ -14,14 +14,14 @@ function Saludo({ pmensaje1, pmensaje2 }) {
   }
 
   return (
-    <div class="boton">
+    <div className="boton">
       <p>
         {mensaje1()} {pmensaje1}
       </p>
-      <button class="boton-estilizado" onClick={manejarClick}>
+      <button className="boton-estilizado" onClick={manejarClick}>
         {mensaje2()} {pmensaje2}
       </button>
-      <p id="txtmensaje" class="txtmensaje"></p>
+      <p id="txtmensaje" className="txtmensaje"></p>
     </div>
   );
 }
