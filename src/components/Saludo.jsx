@@ -1,6 +1,6 @@
 import React from "react";
 
-function Saludo({ pmensaje1 , pmensaje2}) {
+function Saludo({ pmensaje1, pmensaje2 }) {
   function mensaje1() {
     return "Mensaje1:Botón estilizado: ";
   }
@@ -9,7 +9,6 @@ function Saludo({ pmensaje1 , pmensaje2}) {
   }
   function manejarClick() {
     let fecha = new Date();
-
     return (document.getElementById("txtmensaje").textContent =
       "Aqui ..: " + " .. se hizo Click! 🎉: " + fecha);
   }
@@ -20,7 +19,7 @@ function Saludo({ pmensaje1 , pmensaje2}) {
         {mensaje1()} {pmensaje1}
       </p>
       <button class="boton-estilizado" onClick={manejarClick}>
-      {mensaje2()} {pmensaje2}
+        {mensaje2()} {pmensaje2}
       </button>
       <p id="txtmensaje" class="txtmensaje"></p>
     </div>
