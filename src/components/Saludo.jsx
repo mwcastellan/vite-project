@@ -1,27 +1,17 @@
 import React from "react";
 
-function Saludo({ pmensaje1, pmensaje2 }) {
-  function mensaje1() {
-    return "Mensaje1:Botón estilizado: ";
-  }
-  function mensaje2() {
-    return "Mensaje2:Hacer click aquí";
-  }
-  function manejarClick() {
-    let fecha = new Date();
-    return (document.getElementById("txtmensaje").textContent =
-      "Aqui ..: " + " .. se hizo Click! 🎉: " + fecha);
-  }
-
+function Saludo({ ptxtmensaje }) {
   return (
-    <div className="boton">
-      <p>
-        {mensaje1()} {pmensaje1}
-      </p>
-      <button className="boton-estilizado" onClick={manejarClick}>
-        {mensaje2()} {pmensaje2}
+    <div>
+      <button
+        className="boton boton-estilizado"
+        onClick={() =>
+          (document.getElementById(ptxtmensaje).textContent =
+            "Aqui ..: " + " .. se hizo Click! 🎉: " + Date())
+        }
+      >
+        Click me!
       </button>
-      <p id="txtmensaje" className="txtmensaje"></p>
     </div>
   );
 }

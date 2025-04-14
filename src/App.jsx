@@ -8,12 +8,11 @@ function App() {
   return (
     <>
       <h1>Esto es H1 1</h1>
-     <Saludo pmensaje1='Saludo Mensaje1' pmensaje2='Saludo Mensaje2'/>
-      <h2>Esto es H2 1</h2>
-
-      <h2>Esto es H2 2</h2>
-     <Saludo pmensaje1='Saludo Mensaje11' pmensaje2='Saludo Mensaje12'/>
-      <h2>Esto es H2 3</h2>
+      <Saludo ptxtmensaje="txtmensaje1" />
+      <p id="txtmensaje1" className="txtmensaje"></p>
+      <h2>Esto es H2</h2>
+      <Saludo ptxtmensaje="txtmensaje2" />
+      <p id="txtmensaje2" className="txtmensaje"></p>
     </>
   );
 }
